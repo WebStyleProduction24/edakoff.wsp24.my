@@ -152,6 +152,10 @@ nav a#pull {
 /* Стили для экранов 600px и меньше */
 @media screen and (max-width: 768px) {
 
+	.logo, .phone {
+		display: block;
+		height: auto;
+	}
 	header {
 		height: 40px;
 	}
@@ -160,7 +164,7 @@ nav a#pull {
   		height: auto;
   	}
 
-	nav a {
+	nav a, .logo, .phone {
 		line-height: 40px;
 	}
 
@@ -172,7 +176,6 @@ nav a#pull {
 
   	nav li {
   		width: calc(50% - 20px);
-  		float: left;
   		position: relative;
   	}
 
@@ -189,6 +192,7 @@ nav a#pull {
 		display: block;
 		width: 100%;
 		position: relative;
+		z-index: 10;
 	}
 
 	nav a#pull:after {
