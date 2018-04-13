@@ -13,6 +13,35 @@ Version: 4.0
 header {
 	height: 80px;
 	background-color: #f24432;
+	color: #fff;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	height: inherit;
+	line-height: 75px;
+	font-size: 2em;
+	font-weight: 800;
+	font-family: 'PTSerif-Bold';
+	margin-right: 30px;
+}
+
+.phone {
+	height: inherit;
+	line-height: 80px;
+	font-family: 'PTSerif-Bold';
+	font-weight: 500;
+	float: right;
 }
 
 footer {
@@ -21,26 +50,27 @@ footer {
 }
 
 nav {
-	height: 40px;
-	width: 100%;
-	background: #455868;
-	font-size: 11pt;
-	font-family: 'PT Sans', Arial, sans-serif;
-	font-weight: bold;
-	position: relative;
-	border-bottom: 2px solid #283744;
+	height: inherit;
+	/*width: 100%;*/
+	background-color: #f24432;
+	font-size: .8em;
+	font-family: 'PTSerif-Regular';
+	letter-spacing: 1px;
+	/*position: relative;*/
+	text-transform: uppercase;
+	float: left;
 }
 
 nav ul {
 	padding: 0;
 	margin: 0 auto;
-	width: 600px;
 	height: 40px;
 }
 
 nav li {
 	display: inline;
 	float: left;
+	margin: 0 10px;
 }
 
 .clearfix:before, .clearfix:after {
@@ -57,17 +87,12 @@ nav li {
 }
 
 nav a {
-	color: #fff;
 	display: inline-block;
-	width: 100px;
 	text-align: center;
-	text-decoration: none;
-	line-height: 40px;
-	text-shadow: 1px 1px 0px #283744;
+	line-height: 80px;
 }
 
 nav li a {
-	border-right: 1px solid #576979;
 	box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	-webkit-box-sizing:border-box;
@@ -78,19 +103,42 @@ nav li:last-child a {
 }
 
 nav a:hover, nav a:active {
-	background-color: #8c99a4;
 }
 
 nav a#pull {
 	display: none;
 }
 
+@media screen and (max-width: 1024px) {
+	
+	nav {
+		font-size: .65em;
+	}	
+
+	.logo {
+		font-size: 1.2em;
+		margin-right: 5px;
+	}
+
+	.phone {
+		font-size: .85em;
+	}
+}
+
 /* Стили для экранов 600px и меньше */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+
+	header {
+		height: 40px;
+	}
 
 	nav { 
   		height: auto;
   	}
+
+	nav a {
+		line-height: 40px;
+	}
 
   	nav ul {
   		width: 100%;
@@ -99,14 +147,12 @@ nav a#pull {
   	}
 
   	nav li {
-  		width: 50%;
+  		width: calc(50% - 20px);
   		float: left;
   		position: relative;
   	}
 
   	nav li a {
-		border-bottom: 1px solid #576979;
-		border-right: 1px solid #576979;
 	}
 
   	nav a {
@@ -114,30 +160,16 @@ nav a#pull {
 	  	width: 100%;
 	  	text-indent: 25px;
   	}
-}
-
-/*Стили для экранов 515px и меньше*/
-@media only screen and (max-width : 480px) {
-
-	nav {
-		border-bottom: 0;
-	}
-
-	nav ul {
-		display: none;
-		height: auto;
-	}
 
 	nav a#pull {
 		display: block;
-		background-color: #283744;
 		width: 100%;
 		position: relative;
 	}
 
 	nav a#pull:after {
 		content:"";
-		background: url('nav-icon.png') no-repeat;
+		background: url('images/nav-icon.png') no-repeat;
 		width: 30px;
 		height: 30px;
 		display: inline-block;
@@ -145,18 +177,32 @@ nav a#pull {
 		right: 15px;
 		top: 10px;
 	}
+
+	nav ul {
+		display: none;
+		height: auto;
+	}
+}
+
+/*Стили для экранов 515px и меньше*/
+@media only screen and (max-width : 480px) {
+
+
+	nav {
+		border-bottom: 0;
+	}
+
+
 }
 
 /* Смартфоны */
 @media only screen and (max-width : 320px) {
+
 
 	nav li {
 		display: block;
 		float: none;
 		width: 100%;
 	}
-	
-	nav li a {
-		border-bottom: 1px solid #576979;
-	}
+
 }
