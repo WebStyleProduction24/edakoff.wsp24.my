@@ -2,16 +2,16 @@ $(function() {
 	var pull 		= $('#pull');
 	menu 		= $('nav ul');
 	logo		= $('.logo');
-	phone		= $('.phone');
+	logoFloat	= logo.css('float');
 	menuHeight	= menu.height();
-	logoHeight	= logo.height();
-	phoneHeight	= phone.height();
 
 	$(pull).on('click', function(e) {
 		e.preventDefault();
 		menu.slideToggle();
-		logo.css('float', 'none');/**/
+		logo.toggleClass('logo-none');
 	});
+
+	
 
 	$(window).resize(function(){
 		var w = $(window).width();
