@@ -10,7 +10,7 @@ $(function() {
 	$(pull).on('click', function(e) {
 		e.preventDefault();
 		menu.slideToggle();
-		logo.css('float', 'none');
+		logo.css('float', 'none');/**/
 	});
 
 	$(window).resize(function(){
