@@ -16,8 +16,8 @@
 			<?php wp_nav_menu(array(
 				'theme_location'  => 'menu',
 				'container' => 'nav',
-				'container_class' => 'clearfix', 
-				'menu_class'      => 'clearfix',
+				'container_class' => 'clearfix2', 
+				'menu_class'      => 'clearfix2',
 				'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul><a href="#" id="pull">Меню</a>',
 			) ); ?>
 			<div class="phone"><a href="tel:<?php echo phone_1();?>" class="icon-phone"><?php echo get_option('phone_1'); ?></a></div>
