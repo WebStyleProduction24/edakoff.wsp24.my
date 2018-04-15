@@ -29,3 +29,37 @@
   content: "\e942";
   font-family: 'icomoon';
 }
+
+@font-face {
+  font-family: 'adress-email';
+  src:  url('../fonts/adress-email.eot?vo98t9');
+  src:  url('../fonts/adress-email.eot?vo98t9#iefix') format('embedded-opentype'),
+    url('../fonts/adress-email.ttf?vo98t9') format('truetype'),
+    url('../fonts/adress-email.woff?vo98t9') format('woff'),
+    url('../fonts/adress-email.svg?vo98t9#adress-email') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+    speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-mail-envelope-closed:before {
+  content: "\e900";
+  font-family: 'adress-email' !important;
+}
+.icon-location:before {
+  content: "\e947";
+  font-family: 'adress-email' !important;
+}
