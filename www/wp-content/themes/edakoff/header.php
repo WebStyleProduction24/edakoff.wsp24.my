@@ -10,7 +10,7 @@
 
 <body>
 
-	<header>
+	<header id="top">
 		<div class="content">
 			<div class="logo"><a href="<?php home_url();?>"><?php echo get_bloginfo('name');?></a></div>
 			<?php wp_nav_menu(array(

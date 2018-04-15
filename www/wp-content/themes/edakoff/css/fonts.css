@@ -103,3 +103,11 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'Harlow-Solid-Italic';
+	src: url('../fonts/harlow-solid-italic.eot');
+	src: url('../fonts/harlow-solid-italic.woff') format('woff'), url('../fonts/harlow-solid-italic.ttf') format('truetype'), url('../fonts/harlow-solid-italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

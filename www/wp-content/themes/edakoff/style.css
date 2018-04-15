@@ -107,6 +107,7 @@ Version: 4.0
 /*block 2*/
 .block-2 {
 	position: relative;
+	height: 600px;
 }
 
 .block-2 .title {
@@ -285,6 +286,10 @@ section.slider {
 .block-5 .strelka a {
 	color: #fff;
 }
+
+.block-5 .strelka:hover {
+	color: #f24432;
+}
 .block-5 .title{
 	letter-spacing: 2px;
 	font-family: 'PTSerif-Bold';
@@ -292,6 +297,8 @@ section.slider {
 
 .block-5 .strelka{
 	font-family: 'PTSans-Regular';
+	position: relative;
+	z-index: 10000;
 }
 
 .block-5 .image-1, .block-5 .image-2, .block-5 .image-3 {
@@ -508,7 +515,7 @@ header a {
 	margin: 0 auto;
 }
 
-.logo {
+header .logo {
 	float: left;
 	height: inherit;
 	line-height: 75px;
@@ -529,6 +536,29 @@ header a {
 footer {
 	height: 140px;
 	background-color: #1c1a1a;
+}
+
+footer .content {
+	height: inherit;
+	display: table;
+}
+
+footer .content > div {
+	width: calc(100%/6);
+	height:inherit;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+footer .logo {
+	font-family: 'Harlow-Solid-Italic';
+	font-size: 40px;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
 }
 
 nav {

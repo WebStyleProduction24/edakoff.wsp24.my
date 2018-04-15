@@ -76,6 +76,14 @@ function phone_1() {
 	echo $phone_1;
 }
 
+function footer_name() {
+	$footer_name = get_bloginfo('name');
+	$footer_name = str_replace('Е', 'E', $footer_name);
+	$footer_name = str_replace('д', 'd', $footer_name);
+	$footer_name = str_replace('а', 'a', $footer_name);
+	echo $footer_name;
+}
+
 /*
  * Функция создает дубликат поста в виде черновика и редиректит на его страницу редактирования
  */
