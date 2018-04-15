@@ -12,6 +12,8 @@ Version: 4.0
 
 
 /*personal style */
+
+/*Window 1*/
 .block {
 	width: 1170px;
 
@@ -30,7 +32,78 @@ Version: 4.0
 .block-content .block-3 {
 	height: 200px;
 	background-position-x: left !important;
+	position: relative;
 }
+
+.block-content .block-3 table {
+	position: absolute;
+	right: 0;
+	height: 75%;
+	width: 64%;
+	bottom: 0px;
+	font-family: 'PTSerif-Bold';
+	line-height: 2.5;
+	font-size: 1.1em;
+}
+
+.block-content .block-3 table td {
+	vertical-align: middle;
+	position: relative;
+}
+
+.block-content .block-3 img.cup {
+	position: absolute;
+	left: -12%;
+	top: -25%;
+	width: 40%;
+	height: auto;
+
+}
+
+.block-content .block-3 table td img.razdel{
+	position: absolute;
+	right: -2%;
+	top: 35%;
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.block-content .block-3 img.cup {
+		/*display: none;*/
+		width: 20%;
+		left: 28%;
+	}
+
+	.block-content .block-3 table {
+		width: 100%
+	}
+
+	.block-content .block-3 table {
+		font-size: .8em;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+
+	.block-content .block-3 {
+		margin-left: 0px !important;
+	}
+
+	.block-content .block-3 table {
+		font-size: .7em;
+		height: 50%;
+	}
+	.block-content .block-3 img.cup {
+		width: 40%;
+		top: -3%;
+	}
+
+
+
+}
+
+/*End Window 1*/
 
 /*end personal style*/
 
