@@ -244,7 +244,7 @@ section.slider {
 .block-4 .image-1 {
     top: 150px;
     left: 55%;
-    width: 75%;
+    width: 40%;
 }
 
 .block-4 .image-1 img{
@@ -437,6 +437,12 @@ section.slider {
 .block-7 .table span{
 	font-weight: 800;
 	font-size: 18px;
+}
+
+@media only screen and (max-width : 480px) {
+	.block-7, .block-8, .block-9 {
+		display: none;
+	}
 }
 /*End Block 7*/
 
