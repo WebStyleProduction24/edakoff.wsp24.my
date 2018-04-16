@@ -23,6 +23,8 @@ Version: 4.0
 	color: #fff;
 	line-height: 1.3;
 	margin-bottom: 0!important;
+	position: relative;
+	z-index: 10000;
 }
 
 .caption{
@@ -57,6 +59,7 @@ Version: 4.0
 	top: -25%;
 	width: 40%;
 	height: auto;
+	z-index: 1000;
 
 }
 
@@ -104,6 +107,7 @@ Version: 4.0
 /*block 2*/
 .block-2 {
 	position: relative;
+	height: 600px;
 }
 
 .block-2 .title {
@@ -121,18 +125,46 @@ Version: 4.0
 }
 
 .vc_custom_1523781319322 {
-	position: relative;
-	height: 500px;
+	height: 615px;
 } 
 
+.block-2 .mega-post-title {
+	font-family: 'PTSans-Bold';
+}
+
+.block-2 .mega-post-para {
+	font-family: 'PTSans-Regular';
+	margin: 0 5px;
+}
+
+.block-2 .mega-post-carousel3 .mega-post-para p {
+	color: #000;
+}
 section.slider {
 	position: absolute;
-	bottom: 0;
-	width: 75%;
+	bottom: 75px;
+	width: 65%;
 	left:10%;
 }
-.mega-desc-box
-{
+.block-2 .slider button {
+	border-radius: 50% !important;
+	border: solid 2px #fff !important;
+	width: 40px !important;
+	height: 40px !important;
+}
+
+.block-2 .vc-post-styling .slick-prev {
+	left: -30px !important;
+}
+.block-2 .vc-post-styling .slick-next {
+	right: -30px !important;
+}
+
+.block-2 .slider button::before {
+	background: none !important;
+}
+
+.mega-desc-box {
 	width: 100%;
 	height: 100px;
     margin: 0!important;
@@ -140,24 +172,18 @@ section.slider {
 .block-2-bg{
 	position: absolute;
 	right: 0;
+	top: 75px;
 }
 
-
-/*.mega-post-image {
-	height: 165px !important;
-}
-
-.mega-post-image img {
-	height: 100% !important;
-}*/
 /*End block 2*/
-/**/
+/*Block 3*/
 
 .blocf-31{
 	color:#fff;
 }
 .block-31{
-	font-family: 'Open-Sans-Bold'
+	font-family: 'Open-Sans-Bold';
+	position: relative;
 }
 .block-31-button{
 	width: 15%;
@@ -173,33 +199,246 @@ section.slider {
 	margin-bottom: 25px!important;
 }
 
-/**/
+.block-31 .title {
+	font-family: 'PTSerif-Bold';
+}
+
+
+.block-31 .image {
+	position: absolute;
+	right: 0;
+	bottom: -75px;
+}
+/*End Block 3*/
+
+/*Block 4*/
 .block-4{
 	color:#fff;
-	font-family: 'PTSans-Bold';
+	position: relative;
+	height: 600px;
 }
-.text{
+.block-4 .text{
 	width: 37%;
 	line-height: 25px;
 	font-size: 14px;
-}
-.caption{
-	letter-spacing: 2px;
-}
-.strelka{
-font-size: 12px;
+	font-family: 'PTSans-Bold';
 }
 
-.block-4 .image {
+.block-4 .strelka a {
+	color: #fff;
+}
+.block-4 .title{
+	letter-spacing: 2px;
+	font-family: 'PTSerif-Bold';
+	color: #fff;
+}
+
+.block-4 .strelka{
+	font-family: 'PTSans-Regular';
+}
+
+.block-4 .image-1, .block-4 .image-2, .block-4 .image-3 {
 	position: absolute;
-    top: 20%;
-    left: 50%;
+}
+
+.block-4 .image-1 {
+    top: 150px;
+    left: 55%;
     width: 75%;
+}
+
+.block-4 .image-1 img{
+	width: 80%;
+}
+
+.block-4 .image-2 {
+	left: 0;
+	top: 35px;
+}
+
+.block-4 .image-2 img {
+	width: 90%;
+}
+.block-4 .image-3 {
+	right: 0;
+	z-index: 1000;
 }
 
 .block-4 .image img {
 	width: 75%;
 }
+/*End Block 4*/
+
+
+/*Block 5*/
+.block-5{
+	color:#fff;
+	position: relative;
+	height: 600px;
+}
+.block-5 .text{
+	width: 37%;
+	line-height: 25px;
+	font-size: 14px;
+	font-family: 'PTSans-Bold';
+}
+
+.block-5 .strelka a {
+	color: #fff;
+}
+
+.block-5 .strelka:hover {
+	color: #f24432;
+}
+.block-5 .title{
+	letter-spacing: 2px;
+	font-family: 'PTSerif-Bold';
+}
+
+.block-5 .strelka{
+	font-family: 'PTSans-Regular';
+	position: relative;
+	z-index: 10000;
+}
+
+.block-5 .image-1, .block-5 .image-2, .block-5 .image-3 {
+	position: absolute;
+}
+
+.block-5 .image-1 {
+    top: 50px;
+    left: 17%;
+    width: 75%;
+}
+
+.block-5 .image-1 img{
+	width: 80%;
+}
+
+.block-5 .image-2 {
+	left: 0;
+	top: 125px;
+}
+
+.block-5 .image-2 img {
+	width: 80%;
+}
+.block-5 .image-3 {
+	right: 170px;
+	z-index: 1000;
+}
+
+
+.block-5 .image img {
+	width: 75%;
+}
+/*End Block 5*/
+
+/*Block 6*/
+.block-6{
+	color:#fff;
+	position: relative;
+	height: 600px;
+}
+.block-6 .text{
+	width: 37%;
+	line-height: 25px;
+	font-size: 14px;
+	font-family: 'PTSans-Bold';
+}
+
+.block-6 .strelka a {
+	color: #fff;
+}
+.block-6 .title{
+	letter-spacing: 2px;
+	font-family: 'PTSerif-Bold';
+}
+
+.block-6 .strelka{
+	font-family: 'PTSans-Regular';
+}
+
+.block-6 .image-1, .block-6 .image-2, .block-6 .image-3 {
+	position: absolute;
+}
+
+.block-6 .image-2 {
+	left: 0;
+	top: 180px;
+}
+
+.block-6 .image-2 img {
+	width: 65%;
+}
+
+.block-6 section.slider {
+	right: 0;
+}
+
+.block-6 .slider button {
+	border-radius: 50% !important;
+	border: solid 2px #fff !important;
+	width: 40px !important;
+	height: 40px !important;
+}
+
+.block-6 .vc-post-styling .slick-prev {
+	left: -30px !important;
+}
+.block-6 .vc-post-styling .slick-next {
+	right: -30px !important;
+}
+
+.block-6 .slider button::before {
+	background: none !important;
+}
+
+
+.block-6 .mega-post-title {
+	font-family: 'PTSans-Bold';
+}
+
+.block-6 .mega-post-para {
+	font-family: 'PTSans-Regular';
+	margin: 0 5px;
+}
+
+.block-6 .mega-post-carousel3 .mega-post-para p {
+	color: #000;
+}
+/*End Block 6*/
+
+/*Block 7*/
+
+.block-7 {
+	height: 600px;
+}
+
+.block-7 .title {
+	font-family: 'PTSerif-Bold';
+}
+
+.block-7 .table {
+	font-family: 'Open-Sans-Light';
+	color: #fff;
+	font-size: 12px;
+}
+
+.block-7 table {
+	margin: 0 auto;	
+}
+
+.block-7 .table td {
+	line-height: 1.5;
+	padding: 0 10px;
+}
+
+.block-7 .table span{
+	font-weight: 800;
+	font-size: 18px;
+}
+/*End Block 7*/
 
 /*block-9*/
 .block-9 .content {
@@ -228,11 +467,35 @@ font-size: 12px;
 	line-height: 1.7;
 }
 
-.block-9 .contact {
+.block-9 .text .contact span {
 	font-family: 'Open-Sans-Semibold';
 } 
 /*End block-9*/
+/*block-8*/
+.block-8 .strelka a {
+	color: #fff;
+}
+.block-8 .strelka{
+	font-family: 'PTSans-Regular';
+	color: #fff;
+}
 
+
+.block-8 .title {
+	font-family: 'PTSerif-Bold';
+	letter-spacing: 2px;
+}
+
+.block-8 .text-slider {
+	font-family: 'PTSans-Italic';
+	font-size: 20px;
+}
+
+.block-8 .title-slider {
+	font-family: 'Open-Sans-Extrabold';
+	font-weight: 800;
+}
+/*End block-8*/
 /*end personal style*/
 
 header {
@@ -252,7 +515,7 @@ header a {
 	margin: 0 auto;
 }
 
-.logo {
+header .logo {
 	float: left;
 	height: inherit;
 	line-height: 75px;
@@ -273,6 +536,29 @@ header a {
 footer {
 	height: 140px;
 	background-color: #1c1a1a;
+}
+
+footer .content {
+	height: inherit;
+	display: table;
+}
+
+footer .content > div {
+	width: calc(100%/6);
+	height:inherit;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+footer .logo {
+	font-family: 'Harlow-Solid-Italic';
+	font-size: 40px;
+}
+footer a {
+	color: #fff;
+	text-decoration: none;
 }
 
 nav {
